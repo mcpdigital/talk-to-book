@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
           error:
             "messages are required in the request body and the last message must be from the user",
         },
-        { status: 400 },
+        { status: 400 }
       );
     }
 
@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
       },
       {
         status: 500,
-      },
+      }
     );
   }
 }
