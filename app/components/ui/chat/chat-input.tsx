@@ -6,12 +6,12 @@ export default function ChatInput(
   props: Pick<
     ChatHandler,
     "isLoading" | "handleSubmit" | "handleInputChange" | "input"
-  >,
+  >
 ) {
   return (
     <form
       onSubmit={props.handleSubmit}
-      className="flex w-full items-start justify-between gap-4 rounded-xl bg-white p-4 shadow-xl"
+      className="flex w-full items-start justify-between gap-4 rounded-xl bg-white dark:bg-slate-500 p-4 shadow-xl"
     >
       <Input
         autoFocus
