@@ -13,6 +13,7 @@ export default function ChatSection() {
     reload,
     stop,
   } = useChat({ api: process.env.NEXT_PUBLIC_CHAT_API });
+  // TO DEPLOY IN VERCEL THIS NEXT_PUBLIC_CHAT_API MUST BE SET TO: https://talk-to-book.vercel.app/api/chat
 
   return (
     <div className="space-y-4 max-w-5xl w-full">
