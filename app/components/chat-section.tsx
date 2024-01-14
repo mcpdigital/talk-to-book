@@ -2,7 +2,7 @@
 
 import { useChat } from "ai/react";
 import { ChatInput, ChatMessages } from "./ui/chat";
-
+console.log("HERE", process.env.NEXT_PUBLIC_CHAT_API);
 export default function ChatSection() {
   const {
     messages,
